@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: samplePartner_production
-  username: samplePartner
-  password: <%= ENV['SAMPLEPARTNER_DATABASE_PASSWORD'] %>
+  database: dbrtnemjspg9ne
+  username: vuznsuaxajkdym
+  password: fu_j9dc4glqXzTJbctiIivk8Du
+  host: ec2-54-243-48-181.compute-1.amazonaws.com
