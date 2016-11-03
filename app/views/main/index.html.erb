@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link rel="stylesheet" href="/assets/application.css" />
+   <%= stylesheet_link_tag "application" %> 
+    
+	
+<title></title>
+</head><body>
+<div class="wood">
+<div class="text1"><a target="_blank" href="">Help</a>&nbsp;&nbsp;&nbsp;<a target="_blank" href="">Contact</a>&nbsp;&nbsp;&nbsp;<a target="_blank" href="">Responsible Gaming</a>&nbsp;&nbsp;&nbsp;<a target="_blank" href="">Payment methods</a>
+</div>
+<div class="search">  <div class="f4"> </div>
+
+<% if user_signed_in? %>
+ 
+  <div class="f1" style="color:white !important; margin-right:10px !important;" ><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></div>
+   <div class="f2" style="color:white; margin-right:10px !important;" ><%= current_user.email %></div>
+<% else %>
+   <div class="f1"><a href="/users/sign_in"><img src="/img/02.png" alt=""></a></div>
+<% end %>
+  </div>
+</div>
+<div class="play">
+<div class="reg"><p class="text2"><a href="/users/sign_up" class="text2">REGISTER NOW!</a></p></div>    <div class="clear"></div>
+<div class="play1"><a target="_blank" href=""><img src="/img/05.png" alt="img" /></a>
+<p class="text"> <span class="text3">Install Play Casino</span><br /><span class="text4">
+Play over 30 games now-no<br />
+download necessary</span></p></div><div class="down"><a target="_blank" href=""><img src="/img/06.png" alt="img" /></a>
+<p class="text"> <span class="text3">DownloadCasino</span><br /><span class="text4">
+Download now for bigger jackpots<br />
+and loads of extras</span></p></div>
+</div>
+<div class="nav">
+<ul>
+<li><a target="_blank" href="">ABOUT</a></li>
+<li><a target="_blank" href="">CASINO GAMES</a></li>
+<li><a target="_blank" href="">VIP PROGRAM</a></li>
+<li><a target="_blank" href="">PROMOTIONS</a></li>
+<li><a target="_blank" href="">DEPOSIT</a></li>
+<li><a target="_blank" href="">DOWNLOAD</a></li>
+<li><a target="_blank" href="">CONTACTS</a></li></ul></div>
+<div class="imggreen"></div>
+<div class="claim"><div class="claim1"><img src="/img/09.png" alt="img" /></div><div class="claim2">
+<span class="text5">Great for New Players:</span ><br />
+<span  class="text6">Claim Your Welcome Bonus!</span ><br />
+<span  class="text7">Register a new account Now</span ><br />
+<span  class="text8">Now here? Get a 50% bonus up to $350</span ></div></div>
+<div class="main">
+<div class="games">
+<p class="text11">GAMES</p>
+<p class="text9"><a target="_blank" href="">Card games</a></p>
+<p class="text9"><a target="_blank" href="">Tablegames</a></p>
+<p class="text9"><a target="_blank" href="">3-Reel Slots</a></p>
+<p class="text9"><a target="_blank" href="">Sweethearts</a></p>
+<p class="text9"><a target="_blank" href="">5-Reel Slots</a></p>
+<p class="text9"><a target="_blank" href="">Video Poker</a></p>
+<p class="text9"><a target="_blank" href="">Black Jack</a></p>
+<p class="text9"><a target="_blank" href="">Roulette</a></p>
+<p class="text9"><a target="_blank" href="">Classic Slots</a></p>
+<p class="text9"><a target="_blank" href="">Poker Games</a></p>
+<p class="text9"><a target="_blank" href="">Space tale</a></p>
+<p class="text9Last"><a target="_blank" href="">Mini baccarat</a></p>
+<p class="text101"><a target="_blank" href="">View all games</a></p></div><div class="pop">
+<p class="text111">POPULAR GAMES</p>
+<p class="text91"><a target="_blank" href="">Card games</a></p>
+<p class="text91"><a target="_blank" href="">Tablegames</a></p>
+<p class="text91"><a target="_blank" href="">3-Reel Slots</a></p>
+<p class="text91"><a target="_blank" href="">Sweethearts</a></p>
+<p class="text91"><a target="_blank" href="">5-Reel Slots</a></p>
+<p class="text91Last"><a target="_blank" href="">Video Poker</a></p>
+<p class="text13">HOT PLAYERS</p><div class="hot">
+<p class="text14"><a target="_blank" href="">Jake R.&nbsp;&nbsp;&nbsp;USD&nbsp;&nbsp; 16,865</a></p>
+<p class="text14"><a target="_blank" href="">Liem S.&nbsp;&nbsp;&nbsp;USD&nbsp;&nbsp; 12,765</a></p>
+<p class="text14"><a target="_blank" href="">Kirck J.&nbsp;&nbsp;&nbsp;USD&nbsp;&nbsp; 10,567</a></p>
+<p class="text14"><a target="_blank" href="">Rick R.&nbsp;&nbsp;&nbsp;USD&nbsp;&nbsp; 10,456</a></p>
+<p class="text14"><a target="_blank" href="">Mike D.&nbsp;&nbsp;&nbsp;USD&nbsp;&nbsp; 10,258</a></p></div>
+</div>
+<div class="jackpot">
+<div class="one"><p class="text10"><a target="_blank" href="">View all jackpots</a></p></div><div class="two">
+<p class="text15">PAYOUT RATES</p>
+<p class="text16">Apr 09&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;May 09&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jun 09</p>
+<p class="left"><span class="text14">Card games</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;<span class="text17">92.8</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text17">92.8</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text17">92.8</span></p>
+
+<p class="left"><span class="text14">Tablegames</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;<span class="text17">94.2</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text17">94.2</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text17">94.2</span></p>
+
+
+<p class="left"><span class="text14">3-Reel Slots</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;<span class="text17">98.5</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text17">98.5</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text17">98.5</span></p>
+
+<p class="left"><span class="text14">Sweethearts</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text17">87.2</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text17">87.2</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text17">87.2</span></p>
+
+
+<p class="left"><span class="text14">Video Poker</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;<span class="text17">92.8</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text17">92.8</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text17">92.8</span></p>
+
+<p class="left"><span class="text141">Total payout rate</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text141">92.8</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text141">92.8</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text141">92.8</span></p>
+
+
+</div>
+</div><div class="clear"></div>
+
+</div>
+<div class="footer"><div class="v">OnlineCasino&copy; 2010|Privacy Policy</div>
+
+
+</div>
+
+</body>
+</html>
