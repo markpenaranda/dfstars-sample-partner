@@ -25,7 +25,10 @@
 </div>
 <div class="play">
 <div class="reg"><p class="text2"><a href="/users/sign_up" class="text2">REGISTER NOW!</a></p></div>    <div class="clear"></div>
-<div class="play1"><a target="_blank" href=""><img src="/img/05.png" alt="img" /></a>
+<div class="play1">
+<% if user_signed_in? %>
+<a class="button" onclick="DfStarsFunctions.CommonFunctions.play('<%= current_user.email %>', '<%= current_user.email %>', '1992-01-01', '<%= current_user.email %>')" href="#"><img src="/img/05.png" alt="img" /></a>
+<% end %>
 <p class="text"> <span class="text3">Install Play Casino</span><br /><span class="text4">
 Play over 30 games now-no<br />
 download necessary</span></p></div><div class="down"><a target="_blank" href=""><img src="/img/06.png" alt="img" /></a>
@@ -35,13 +38,16 @@ and loads of extras</span></p></div>
 </div>
 <div class="nav">
 <ul>
-<li><a target="_blank" href="">ABOUT</a></li>
 <li><a target="_blank" href="">CASINO GAMES</a></li>
 <li><a target="_blank" href="">VIP PROGRAM</a></li>
 <li><a target="_blank" href="">PROMOTIONS</a></li>
 <li><a target="_blank" href="">DEPOSIT</a></li>
 <li><a target="_blank" href="">DOWNLOAD</a></li>
-<li><a target="_blank" href="">CONTACTS</a></li></ul></div>
+<% if user_signed_in? %>
+<li><a target="_blank" onclick="DfStarsFunctions.CommonFunctions.play('<%= current_user.email %>', '<%= current_user.email %>', '1992-01-01', '<%= current_user.email %>')" href="#">CLICK HERE TO PLAY DFS</a></li>
+<% end %>
+</ul>
+</div>
 <div class="imggreen"></div>
 <div class="claim"><div class="claim1"><img src="/img/09.png" alt="img" /></div><div class="claim2">
 <span class="text5">Great for New Players:</span ><br />

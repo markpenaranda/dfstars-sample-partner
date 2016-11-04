@@ -1,6 +1,374 @@
-// Place all the styles related to the Main controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'FuturisBold';
+    src: url('fonts/futurisb-webfont.eot');
+    src: url('fonts/futurisb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/futurisb-webfont.woff') format('woff'),
+         url('fonts/futurisb-webfont.ttf') format('truetype'),
+         url('fonts/futurisb-webfont.svg#FuturisBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+	background-color:#000;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}
+.wood{
+	background-image:url(images/01.png);
+	width:1202px;
+	height:48px;
+	margin-left: auto;
+  margin-right: auto;}
+ .main{margin-left: auto;
+  margin-right: auto;
+   width:1000px;}
+  .footer{margin-left: auto;
+  margin-right: auto;
+   width:1000px;
+   height:60px;
+   font-family:Georgia, "Times New Roman", Times, serif;
+   color:#bb160a;
+   font-size:12px;}
+  .footer a{
+	  text-decoration:none;
+	     color:#bb160a;}
+.text1{
+	font-size:11px;
+	color:#c4c4c4;
+	position:relative;
+	float:left;
+	padding-top:10px;
+	padding-left:105px;
+	}
+.buttonsubmit{
+	position:relative;
+	padding-right:105px;
+	padding-left:10px;}
+.search{
+	position:relative;
+	float:right;}
+.f1{		position:relative;
+		padding-right:10px;
+	float:right;
+	display:inline;
+	padding-top:7px;}
+.f11{font-size:11px;
+	color:#c4c4c4;
+		position:relative;
+		padding-right:10px;
+		padding-top:10px;
+	float:right;
+	display:inline;}
+	.f2{
+		position:relative;
+		padding-top:7px;
+	float:right;
+	display:inline;
+
+	}
+	.f3{
+		position:relative;
+		padding-top:10px;
+	float:right;
+	display:inline;
+		}
+.text1 a{
+	font-size:11px;
+	color:#c4c4c4;
+	text-decoration:none;
+	}
+.text2{
+	font-family:"Times New Roman", Times, serif;
+	font-weight:bold;
+	font-size:10px;
+	color:#FFF;
+	position:relative;
+	padding-left:20px;}
+.colortext {
+    background-color: #110501;
+	
+    color: #FFF;
+	height:20px;
+	width:115px;
+	position:relative;
+		border-bottom-color:#96590d;}
+.play{margin-left: auto;
+  margin-right: auto;
+  background-image:url(images/03.png);
+  width:996px;
+  height:288px;
+  
+	}
+.reg{
+	background-image:url(images/04.png);
+	width:142px;
+	height:56px;
+	position:relative;
+	float:right;}
+.play1{
+	position:relative;
+	float:left;
+	padding-top:60px;}
+.down{
+	position:relative;
+	float:right;
+	padding-top:60px;}
+.text3{
+	font-size:12px;
+	font-weight:bold;
+	color:#FFF;
+
+		text-align:center;
+}
+.text4{
+	text-align:center;
+	font-size:11px;
+	color:#71bc30;
+	text-align:center;
+}
+.text{
+	position:relative;
+	padding-left:20px;
+		text-align:center;}
+.imggreen{margin-left: auto;
+  margin-right: auto;
+  width:1054px;
+  height:13px;
+  background-image:url(images/07.png);
+	}
+	.nav{  width:996px;
+	 position:relative;
+	margin-left: auto;
+  margin-right: auto;
+		height:40px;
+	}
+	.nav li{
+	float:left;
+	width:136px;
+	font-family:"Times New Roman", Times, serif;
+	font-weight:bold;
+	 font-size:14px;
+	 color:#919191;
+	}
+.nav li a {
+	 float:left;
+		 text-decoration:none;
+	 display:inline;
+		 color:#919191;
+	text-align:center;
+	}
+
+
+.nav ul { 
+	list-style:none;
+
+	}
+.nav li a:hover{
+	color:#95b35a;
+	
+	}
+.claim{
+	background-image:url(images/08.png);
+	width:989px;
+	height:181px;
+	margin-left: auto;
+  margin-right: auto;}
+ .claim1{
+	 position:relative;
+	 float:left;
+	 padding-left:30px;
+	 	  padding-top:10px;}
+ .claim2{
+	 position:relative;
+	 float:left;
+	  padding-left:60px;
+	  padding-top:25px;}
+ .text5{ font-family: 'FuturisBold';
+ font-size:17px;
+ color:#FFF;
+	 }
+.text6{ font-family: 'FuturisBold';
+ font-size:40px;
+ color:#228ad4;
+	}
+.text7{
+	font-size:12px;
+	color:#FFF;}
+.text8{
+	font-size:12px;
+	color:#69c119;}
+.games{
+	position:relative;
+	width:209px;
+	height:568px;
+	float:left;
+	background-image:url(images/10.png);
+	 }
+.jackpot{
+	position:relative;
+	float:left;
+	padding-left:20px;}
+.pop{
+	position:relative;
+	float:right;
+	padding-left:20px;
+	background-image:url(images/12.png);
+	width:180px;
+	height:568px;}
+.text9{
+	position:relative;
+
+	margin-left:10px;
+	width:190px;
+	font-size:13px;
+	color:#69c119;
+	border-bottom-style:dotted;
+	border-bottom-color:#69c119;
+	border-bottom-width:thin;
+	text-align:center;
+	line-height:2
+		}
+		.text9Last{
+	position:relative;
+
+	margin-left:10px;
+	width:190px;
+	font-size:13px;
+	color:#69c119;
+	
+	text-align:center;
+	line-height:2
+		}
+.text91{
+	position:relative;
+	
+margin-left:-12px;
+	width:190px;
+	font-size:13px;
+	color:#69c119;
+	border-bottom-style:dotted;
+	border-bottom-color:#69c119;
+	border-bottom-width:thin;
+	text-align:center;
+	line-height:2
+		}
+.text9 a{	text-decoration:none;
+color:#69c119;}
+.text9Last a{	text-decoration:none;
+color:#69c119;}
+.text91 a{	text-decoration:none;
+color:#69c119;}
+.text10 a{
+	color:#bc160e;
+	font-weight:bold;
+	font-size:13px;
+	position:relative;
+	padding-left:60px;
+	}
+.text101 a{
+	color:#bc160e;
+	font-weight:bold;
+	font-size:13px;
+	position:relative;
+	padding-left:60px;
+	}
+.text10 {
+	position:relative;
+	padding-top:200px;
+	padding-left:350px;}
+.text11{
+	position:relative;
+	padding-left:80px;
+	font-family:"Times New Roman", Times, serif;
+	font-weight:bold;
+	font-size:13px;
+	color:#919191;}
+.text13{
+	position:relative;
+	padding-left:30px;
+	padding-top:20px;
+	font-family:"Times New Roman", Times, serif;
+	font-weight:bold;
+	font-size:13px;
+	color:#919191;}
+.text15{font-family:"Times New Roman", Times, serif;
+	font-weight:bold;
+	font-size:13px;
+	color:#919191;
+	position:relative;
+	padding-left:230px;
+	padding-top:15px;}
+.text16{
+	position:relative;
+	padding-left:210px;
+	padding-top:20px;
+	font-size:13px;
+	color:#1660c1;}
+.text111{
+	position:relative;
+	padding-left:30px;
+	padding-bottom:20px;
+	font-family:"Times New Roman", Times, serif;
+	font-weight:bold;
+	font-size:13px;
+	color:#919191;}
+.one{
+	width:558px;
+	height:270px;
+	background-image:url(images/11.png);}
+.two{
+	width:552px;
+	height:291px;
+	background-image:url(images/13.png);}
+
+.text91Last{
+	position:relative;
+	
+margin-left:-12px;
+	width:190px;
+	font-size:13px;
+	color:#69c119;
+		text-align:center;
+	line-height:2}.text91Last a{	text-decoration:none;
+color:#69c119;}
+.text14{
+	color:#69c119;
+	font-size:13px;
+	text-align:center;
+	}
+.text141{
+	color:#F00;
+	font-size:13px;
+	text-align:center;
+	}
+.left{
+	position:relative;
+	padding-left:60px;
+	line-height:0.8;}
+.left1{position:relative;
+	padding-left:60px;
+	margin-top:20px;
+}
+.hot{
+		position:relative;
+	padding-top:15px;}
+.text14 a{
+	color:#69c119;
+	text-decoration:none;
+	font-size:13px;	}
+.text17{font-size:13px;
+color:#828282;
+	}
+	.v{
+	position:relative;
+	float:left;
+	}
+.vlinks{
+	position:relative;
+	float:right;}
+
 /*
   960 Grid System ~ Core CSS.
   Learn more ~ http://960.gs/
