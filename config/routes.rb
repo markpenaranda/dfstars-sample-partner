@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'main/index'
-  get 'dfs/auth', to: 'dfs#authenticate'
+  get 'dfs/auth' => 'dfs#authenticate'
 
   root 'main#index'
 
