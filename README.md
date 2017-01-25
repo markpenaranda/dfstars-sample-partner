@@ -1,24 +1,4 @@
-# README
+# Simple Sample Operator App for DFStars
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app serves as example/ideal implementation of operators who will integrate to DFstars.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
