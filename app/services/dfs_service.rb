@@ -53,4 +53,24 @@
     end
   end
 
+  def deduct_casino_credits(user, amount)
+    user.credits = user.credits - amount
+    user.save
+
+  end
+
+  def send_credits_to_dfstars(dfs_user_id, amount)
+    begin
+      url = CONFIG[:base_url] + '/sessions'
+      headers = {"Authorization": "key " + CONFIG[:auth_key], content_type: :json, accept: :json}
+      resp = RestClient.post(url, {userId: user_id, logoutUrl: "http://localhost:3000"}.to_json, headers)
+      login = JSON.parse(resp)
+      return login['loginUrl']
+     rescue RestClient::ExceptionWithResponse => e
+      e.response
+    end
+
+  end
+
+
   end
