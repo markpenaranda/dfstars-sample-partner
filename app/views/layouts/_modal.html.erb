@@ -27,9 +27,14 @@
 				<h3>Add Credits to your DFStars Account</h3>
 			</div>
 			<div class="modal-body">
-				<p>You can specify how much credits you want to add in your DFStars account.</p>
-				<div class="form-group">
-					<input id="addAmount" type="number" class="form-control" style="text-align: center" />
+				<div class="">
+					<div id="addForm" class="form-group">
+						<p>You can specify how much credits you want to add in your DFStars account.</p>
+						<input id="addAmount" type="number" class="form-control" style="text-align: center" />
+					</div>
+				</div>
+				<div id="addSuccess" style="display: none;" class="alert alert-success">
+					You have successfully transfered <span id="addAmountValue"></span> ! <a href="/dfs/auth">Click here to go to DFStars!</a>
 				</div>
 			</div>
 			<div class="modal-footer">
