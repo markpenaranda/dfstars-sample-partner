@@ -6,30 +6,36 @@
     :operator_root_user_id => '319711'
   }
 
-  def authenticate(name, username, email, amount)
+  def authenticate(user, amount)
 
     dfs_id = register_account({
-      name: name,
-      username: username,
-      email: email,
+      name: user.full_name,
+      username: user.username,
+      email: user.email,
       birthdate: '1990-01-01'
       })
     
-    send_credits_to_dfstars(dfs_id, amount.to_i)
+    user.dfs_id = dfs_id
+    user.save
 
+    if amount.to_i > 0 
+      deduct_casino_credits(user, amount)
+      send_credits_to_dfstars(dfs_id, amount.to_i)
+    end
 
     login_url = login_account(dfs_id)
-    puts login_url
     return login_url
   end
 
   def load_credits(user, amount)
-
-    deduct_casino_credits(user, amount)
-
+    if amount.to_i > 0
+      deduct_casino_credits(user, amount)
+      sent = send_credits_to_dfstars(user.dfs_id, amount.to_i)
+    end
+    return sent
   end
 
-  def withdraw_credits
+  def withdraw_credits(user, amount)
 
   end
 
@@ -60,7 +66,7 @@
   end
 
   def deduct_casino_credits(user, amount)
-    user.credits = user.credits - amount
+    user.credits = user.credits.to_i - amount.to_i
     user.save
 
   end
@@ -72,15 +78,14 @@
         action: "SEND",
         toUserId: dfs_user_id
       }
-      puts transaction
 
       url = CONFIG[:base_url] + "/users/" + CONFIG[:operator_root_user_id] + "/transactions"
-      puts url
       headers = {"Authorization": "key " + CONFIG[:auth_key], content_type: :json, accept: :json}
       RestClient.post(url, transaction.to_json, headers)
-      
+      return true
      rescue RestClient::ExceptionWithResponse => e
       e.response
+      return false
     end
 
   end

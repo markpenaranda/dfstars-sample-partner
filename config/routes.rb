@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'main/index'
   get 'dfs/auth' => 'dfs#authenticate'
+  post 'dfs/load' => 'dfs#add_credits'
 
   root 'main#index'
 
